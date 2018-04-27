@@ -11,3 +11,18 @@ def insertSort(arr):
             j = j-1
          arr[j+1] = key
      return arr
+
+#通过while循环来进行排序
+def insertSort(arr):
+    i = 1
+    while i < len(arr):
+        key = arr[i]
+        j = i - 1
+        while j>=0:
+            if key <arr[j]:
+                arr[j+1] = arr[j]
+                j -=1
+            else:
+                break
+        arr[j+1] = key
+        i+=1
