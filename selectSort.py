@@ -10,3 +10,17 @@ def selectSort(arr):
         j,minIndex = minIndex,j
     arr[i],arr[minIndex] = arr[minIndex],arr[i]
   return arr
+
+#通过while循环来进行选择排序
+def selectSort(arr):
+  i = 0
+  while i < len(arr)-1:
+    minInedx = i
+    j = i+1
+    while j < len(arr):
+      if arr[j] < arr[minIndex]:
+        minIndex = j
+      j+=1
+    if minIndex != i:
+      arr[i],arr[minIndex] = arr[minIndex],arr[i]
+    i+=1
